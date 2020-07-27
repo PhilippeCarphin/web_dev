@@ -1,0 +1,17 @@
+.div-span-demo {
+    background-color: #92a8d1
+}
+
+.boxed {
+    border: 5px;
+    border-style: solid;
+    border-color: green;
+    /*
+    Also possible:
+    border: 5px solid green;
+    */
+}
+
+.transparent_bg img {
+    background: transparent;
+}
