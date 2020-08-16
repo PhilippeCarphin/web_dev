@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title>Forms_title</title>
     </head>
     <body>
         <h1>Forms</h1>
         <form action="https://wikipedia.org" method="get">
             <label>Text Label <input type="text" name="text"></label><br>
-            type date: <input type="date" name="date"><br>
-            type password: <input type="password" name="password"><br>
-            type color: <input type="color" name="color"><br>
-            type file: <input type="file" name="file"><br>
-            type checkbox <input type="checkbox" name="checkbox"><br>
-            type submit <input type="submit">
+            <label>Date: <input type="date" name="date"></label><br>
+            <label>Password: <input type="password" name="password"></label><br>
+            <label>Color: <input type="color" name="color"></label><br>
+            <label>File: <input type="file" name="file"></label><br>
+            <label for="checkbox-id">Checkbox Label</label>
+            <input type="checkbox" id="checkbox-id" name="checkbox"><br>
+            <label>Submit <input type="submit">
         </form>
-        If the method is "get", then this form will submit with a query string with
-        a question mark followed by <code>key=value</code> pairs separated by ampersands.
+        <p>If the method is "get", then this form will submit with a query string with
+        a question mark followed by <code>key=value</code> pairs separated by ampersands.</p>
+
+        <p>You can put the <code>input</code> inside a <code>label</code> tag but you can also give the input an ID and use the <code>for</code> attribute with in the <code>label</code></p>
+
+        <p>From what I'm seeing, I prefer the former to the latter.</p>
+        <p>Maybe if I wanted to use a table to give me some alignment, then the label could not contain the input.</p>
+        <form>
+            <table>
+                <th>label</th> <th>input</th>
+                <tr>
+                    <td><label for="username-input">Username :</label></td>
+                    <td><input type="text" id="username-input"></td>
+                </tr>
+                <tr>
+                    <td><label for="password-input">Password :</label></td>
+                    <td><input type="password" id="password-input"></td>
+                </tr>
+                <tr>
+                    <td><label for="color-input">Color :</label></td>
+                    <td><input type="color" id="color-input"></td>
+                </tr>
+            </table>
+        </form>
+        Although I wonder if experienced people would control alignment this way.  Maybe the CSS has a way to deal with this stuff.
+
+        <h2>HTML5 form validation</h2>
+        <form>
+            <label>Email : <input type="email" ></label>
+            <label>Username: <input type="text" required></label>
+            <input type="submit">
+        </form>
+        <p>The <code>required</code> boolean attribute makes the input mandatory.</p>
+
+        <p>The email input type also validates that the value has the right format if it is there (since this one does not have the <code>required</code> attribute).</p>
         <script type=text/javascript src=forms.js></script>
+
+        For <code>&lt;input type="radio&gt;</code>, the name attribute will like radio buttons together so that you can only click one of the choices.
+        <form>
+            <label>Dogs<input type="radio" name="favorite-animal"></label>
+            <label>Cats<input type="radio" name="favorite-animal"></label>
+        </form>
+
+        The select tag works with option subtags.  It needs a name so that the value ends up in the query.  The options can have a <code>value</code> attribute that allows us to separate the query that will be made from what is displayed.
+        <form>
+            <select name="cool-person">
+                <option value="phil">Phil</option>
+                <option value="paul">Paul</option>
+                <option value="thom">Thom</option>
+            </select>
+            <input type="submit">
+        </form>
+
+        Text areas are cool too, it's a <code>&lt;textarea&gt;</code> tag with attributes <code>rows</code> and <code>cols</code> to control the dimensions (are we paying by the letter, why does it have to be "cols" and not "columns"?).
+        <form>
+            <textarea rows="5" cols="80" placeholder="textarea placeholder"></textarea>
+        </form>
     </body>
 </html>

@@ -1,0 +1,25 @@
+body {
+    align-items: center
+}
+td {
+    /* border: 3px solid green;*/
+    width: 100px;
+    height: 100px;
+    padding:0;
+    margin:0;
+    text-align: center;
+}
+tr {
+    float: left
+}
+
+#top-mid-cell, #mid-mid-cell, #bot-mid-cell, .vertical{
+    border-left: 5px solid green;
+    border-right: 5px solid green
+}
+
+/* #mid-left-cell, #mid-mid-cell, #mid-right-cell { */
+#mid-row td, .horizontal{
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+}

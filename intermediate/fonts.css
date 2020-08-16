@@ -1,0 +1,31 @@
+h1, h2, h3 {
+    font-family: 'Avant Garde', Helvetica;
+    text-align: center;
+    text-decoration: underline
+}
+h1 {
+    font-size: 50px
+}
+h2 {
+    font-size: 40px
+}
+h3 {
+    font-size: 30px
+}
+p {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold; /* Can also be 100, 200, 300, ... 800 (but some of them will be meaningless depending on the font*/
+    line-height: 1.5;
+    text-align: justify;
+    /* Text is made itallic by using the 'em' tag: <em>itallic text</em>.*/
+}
+
+#myspan {
+    font-size: 1.3em
+}
+
+p.google {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold
+}

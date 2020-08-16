@@ -1,0 +1,26 @@
+.proper {
+    background: beige;
+    border: 4px solid green;
+    color: orange;
+}
+
+.proper ul {
+    background: burlywood
+}
+
+.proper li {
+    color: green;
+    background: blue
+}
+
+.proper p {
+    color: blue
+}
+
+#list-id {
+    background: blueviolet
+}
+
+#list-id li {
+    background: yellowgreen
+}

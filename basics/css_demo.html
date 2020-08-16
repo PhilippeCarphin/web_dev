@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo of CSS stuff</title>
+    </head>
+    <style type="text/css">
+        .hybrid {
+            color: red
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="proper.css">
+    <body>
+        <h1>About Me</h1>
+        <h4>My Hobbies</h4>
+        <h5>Using inline style</h5>
+        <ul style="color:blue">
+            <li style="color:purple">Playing guitar</li>
+            <li>Origami</li>
+            <li>Programming</li>
+        </ul>
+        <h5>Using a style tag within HTML</h5>
+        This is useful for quick stuff while working on something.
+
+        Things in that style tag should end up in the 
+        <ul class="hybrid">
+            <li>Playing guitar</li>
+            <li>Origami</li>
+            <li>Programming</li>
+        </ul>
+        <h5>Using a proper <code>.css</code> stylesheet</h5>
+        <p>The following is a div tag with class "proper" (as in the proper way of doing styling, using .css files)</p>
+        <code style="white-space:pre-wrap">
+            <object style="border:5px solid red;height:max-content" type="text/html" data="proper.css"></object>
+                
+                
+        </code>
+        <div class="proper">
+            Naked text inside <code>&lt;div class="proper"&gt;</code>
+            <p>Here is some text inside a <code>p</code> tag inside the div.</p>
+            <ul>
+                <li>Playing guitar</li>
+                <li>Origami</li>
+                <li>Programming</li>
+            </ul>
+            <ul id="list-id">
+                <li>Another list</li>
+                <li>Another list</li>
+            </ul>
+        </div>
+    </body>
+</html>

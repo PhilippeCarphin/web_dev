@@ -1,0 +1,28 @@
+* {
+    border: 1px solid lightgrey
+}
+
+/*
+ Descendant (space) : select a tags that are
+ descendants of li Note it says "descendant" and
+ not "child"
+*/
+#first-list a {
+    background: red
+}
+
+h2 + p {
+    background: lightblue
+}
+
+a[href="www.google.com"] {
+    background: purple
+}
+
+input[type="checkbox"] {
+    background: blue
+}
+
+li:nth-of-type(2) {
+    background:lightgreen
+}

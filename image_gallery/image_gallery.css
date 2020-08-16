@@ -1,0 +1,28 @@
+body {
+    flex: auto;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+img {
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+p {
+    margin-left: 1.66%;
+    font-size: 23px;
+    font-family: Raleway;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid lightgrey;
+    width: 30%
+}
+/*
+#image-container {
+    width: 600px;
+    height: 1000px;
+    border: 5px solid green;
+}
+*/
